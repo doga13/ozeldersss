@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <style>
+        body {
+            margin: 0 ;
+            background-color: #eeeeee;
+        }
+        header {
+            width: 100%;
+            background-color: black;
+
+        }
+        #resmenu{
+            display: none;
+        }
+        header label {
+            display: none;
+            width: 32px;
+            height: 32px;
+            padding: 10px;
+            border-right: 1px solid #ffffff;
+        }
+        header label:hover{
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .menu li:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) {
+            header label {
+                display: block;
+            }
+            .menu {
+                position: absolute;
+                background-color: black;
+                width: 100%;
+                margin-top: -100%;
+                transition: all 0.5s;
+
+            }
+            .menu ul {
+                flex-direction:column ;
+            }
+            #resmenu:checked  ~.menu {
+                margin: 0;
+            }
+        }
+        .menu ul li a:hover{
+            background-color: #eeeeee;
+            color: black;
+        }
+        main  {
+            background: #dbdbdd;
+            width: 80%;
+            margin: auto;
+            height: auto;
+            margin-top: 70px;
+            box-shadow: 0 2px 8px 2px rgba(20, 23, 28,15);
+            
+            
+            }
+            h1 {
+                background-color: black;
+                color: white;
+                text-align: center;
+                width: 100%;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  ;
+                
+            }
+            iframe{
+                width: 98%;
+                border-radius: 10px;
+                
+                margin-left: 10px;
+            }
+            .adres {
+                background-color: wheat;
+                
+                
+            }
+            h2 {
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                padding-top: 30px;
+            }
+            span{
+                display: block;
+                letter-spacing: 1,5px;
+                text-align: center;
+            }
+            footer {
+                width: 100%;
+                text-align: center;
+                background-color: black;
+                color: white;
+            }
+        footer a img {
+                width: 1.5%;
+                float: right;
+                padding-right: 5px;
+            }
+    </style>
+</head>
+<body>
+    <div align = center>
+        <img src="img/logoözel.png" width="20%"  alt="">
+    </div>
+    <header>
+        <input type="checkbox" id="resmenu">
+        <label for="resmenu"  > <img src="img/menu.png" width="100%"  alt="Resim bulunamadı"> </label>
+        <nav class="menu">
+            <ul>
+                <li> <a class="1" href="index.html"> Anasayfa</a></li>
+                <li> <a class="2" href="hizmetlerimiz.html"> Hizmetlerimiz</a></li>
+                <li> <a class="3" href="kurumsal.html">Kurumsal</a></li>
+                <li> <a class="4" href="kariyer.html">Kariyer</a></li>
+                <li> <a class="5" href="iletişim.html">İletişim</a></li>
+                
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <h1>İLETİŞİM</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6119.648560402154!2d32.84680067663656!3d39.922948417702116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34effd6b9930b%3A0x6fa79cbeeeec0bac!2zS8SxesSxbGF5LCAwNjQyMCDDh2Fua2F5YS9BbmthcmE!5e0!3m2!1str!2str!4v1605953943780!5m2!1str!2str"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="adres">
+            <h2>ADRES</h2>
+            <span class="span">
+                Doğa Mahallesi Yüksel Sokak No:13 Kızılay/Ankara 
+
+            </span>
+            <span class="span">
+                0444 333 22 11 
+            </span>
+            <span class="span">
+                doga_yuksell@hotmail.com
+            </span>
+            <span class="span">
+                www.özelders.com
+            </span>
+            <p><br><br></p>
+        </div>
+    </main>
+    <footer>Tüm hakları saklıdır &copy; | 2020 
+        <a href="http://www.facebook.com" target="_blank"> <img src="img/facebook.png" alt="Resim bulunamadı" title="facebook"></a>
+        <a href="http://www.intagram.com" target="_blank"> <img src="img/insta.jpg" alt="Resim bulunamadı" title="instagram"></a>
+        <a href="http://www.linkedin.com" target="_blank"> <img src="img/linkedin.png" alt="Resim bulunamadı" title="linkedin"></a>
+        
+    </footer>
+</body>
+</html>

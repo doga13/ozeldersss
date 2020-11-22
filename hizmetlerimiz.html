@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz</title>
+    <style>
+        body {
+            margin: 0 ;
+            background-color: #eeeeee;
+        }
+        header {
+            width: 100%;
+            background-color: black;
+
+        }
+        #resmenu{
+            display: none;
+        }
+        header label {
+            display: none;
+            width: 32px;
+            height: 32px;
+            padding: 10px;
+            border-right: 1px solid #ffffff;
+        }
+        header label:hover{
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .menu li:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) {
+            header label {
+                display: block;
+            }
+            .menu {
+                position: absolute;
+                background-color: black;
+                width: 100%;
+                margin-top: -100%;
+                transition: all 0.5s;
+
+            }
+            .menu ul {
+                flex-direction:column ;
+            }
+            #resmenu:checked  ~.menu {
+                margin: 0;
+            }
+        }
+        .menu ul li a:hover{
+            background-color: #eeeeee;
+            color: black;
+        }
+        main  {
+            background: #dbdbdd;
+            width: 80%;
+            margin: auto;
+            height: auto;
+            margin-top: 40px;
+            box-shadow: 0 2px 8px 2px rgba(20, 23, 28,15);
+            padding-left: 20px;
+            }
+        .hakkımızdaresim {
+            width: 20%;
+            height: 20%;
+            float: left;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        .hakkımızdaresim1 {
+            float: right;
+            border-radius:10px ;
+            width: 20%;
+            height: 20%;
+            margin: 10px;
+        }
+        .hakkımızdayazı{
+            font-size: 15px;
+            text-indent: 50px;
+
+
+        }
+        
+        footer {
+                width: 100%;
+                text-align: center;
+                background-color: black;
+                color: white;
+            }
+        footer a img {
+                width: 1.5%;
+                float: right;
+                padding-right: 5px;
+            }
+        
+            
+    </style>
+</head>
+<body>
+    <div align = center>
+        <img src="img/logoözel.png" width="20%"  alt="">
+    </div>
+    <header>
+        <input type="checkbox" id="resmenu">
+        <label for="resmenu"  > <img src="img/menu.png" width="100%"  alt="Resim bulunamadı"> </label>
+        <nav class="menu">
+            <ul>
+                <li> <a class="1" href="index.html"> Anasayfa</a></li>
+                <li> <a class="2" href="hizmetlerimiz.html"> Hizmetlerimiz</a></li>
+                <li> <a class="3" href="kurumsal.html">Kurumsal</a></li>
+                <li> <a class="4" href="kariyer.html">Kariyer</a></li>
+                <li> <a class="5" href="iletişim.html">İletişim</a></li>
+                
+            </ul>
+
+        </nav>
+    </header>
+        
+    <main>
+        <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center;">SİZE SUNDUĞUMUZ OLANAKLAR</h1>
+        <img class="hakkımızdaresim" src="img/sınıfta ders.jpg" alt="Resim bulunamadı">
+        <h3>GRUP ŞEKLİNDE DERS</h3>
+        <p class="hakkımızdayazı">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Voluptas saepe asperiores velit consequuntur est deserunt, id harum voluptates
+              recusandae cum? Ducimus enim totam quaerat nobis ratione, aperiam harum in
+               perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Omnis magnam pariatur perferendis vel minus aperiam eius accusamus? </P>
+               <P class="hakkımızdayazı"> Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Dicta dolores corrupti ipsum rerum eaque adipisci nulla culpa quod 
+                    libero illum, modi aliquid facere cum, provident sed veniam delectus 
+                    suscipit? Voluptates?</P>
+
+        <img class="hakkımızdaresim1" src="img/özelders.jpg"  alt="Resim bulunamadı">
+        <h3>BİREBİR DERS</h3>
+        <p class="hakkımızdayazı"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+             Ducimus corporis quibusdam officia odit voluptas cupiditate debitis numquam
+              quia quaerat ullam in soluta sequi, fuga voluptatem totam quos animi repellat
+               eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+               <p class="hakkımızdayazı"> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Sequi officiis ratione temporibus earum fugiat
+                     consequuntur, repellat placeat, maxime aspernatur similique vitae 
+                     suscipit dicta quae illo odit obcaecati numquam? Doloribus,
+                      repudiandae.</p>
+    </main>
+    <footer>Tüm hakları saklıdır &copy; | 2020 
+        <a href="http://www.facebook.com" target="_blank"> <img src="img/facebook.png" alt="Resim bulunamadı" title="facebook"></a>
+        <a href="http://www.intagram.com" target="_blank"> <img src="img/insta.jpg" alt="Resim bulunamadı" title="instagram"></a>
+        <a href="http://www.linkedin.com" target="_blank"> <img src="img/linkedin.png" alt="Resim bulunamadı" title="linkedin"></a>
+        
+    </footer>
+
+</body>
+</html>

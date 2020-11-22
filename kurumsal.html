@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurumsal</title>
+    <style>
+        body {
+            margin: 0 ;
+            background-color: #eeeeee;
+        }
+        header {
+            width: 100%;
+            background-color: black;
+
+        }
+        #resmenu{
+            display: none;
+        }
+        header label {
+            display: none;
+            width: 32px;
+            height: 32px;
+            padding: 10px;
+            border-right: 1px solid #ffffff;
+        }
+        header label:hover{
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        .menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .menu li:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) {
+            header label {
+                display: block;
+            }
+            .menu {
+                position: absolute;
+                background-color: black;
+                width: 100%;
+                margin-top: -100%;
+                transition: all 0.5s;
+
+            }
+            .menu ul {
+                flex-direction:column ;
+            }
+            #resmenu:checked  ~.menu {
+                margin: 0;
+            }
+        }
+        .menu ul li a:hover{
+            background-color: #eeeeee;
+            color: black;
+        }
+        main  {
+            background: #dbdbdd;
+            width: 80%;
+            margin: auto;
+            height: auto;
+            margin-top: 70px;
+            box-shadow: 0 2px 8px 2px rgba(20, 23, 28,15);
+            padding-left: 20px;
+            padding-right: 20px;
+            }
+        footer {
+                width: 100%;
+                text-align: center;
+                background-color: black;
+                color: white;
+            }
+        footer a img {
+                width: 1.5%;
+                float: right;
+                padding-right: 5px;
+            }
+            p{
+                text-indent: 50px;
+            }
+    </style>
+</head>
+<body>
+    <div align = center>
+        <img src="img/logoözel.png" width="20%"  alt="">
+    </div>
+    <header>
+        <input type="checkbox" id="resmenu">
+        <label for="resmenu"  > <img src="img/menu.png" width="100%"  alt="Resim bulunamadı"> </label>
+        <nav class="menu">
+            <ul>
+                <li> <a class="1" href="index.html"> Anasayfa</a></li>
+                <li> <a class="2" href="hizmetlerimiz.html"> Hizmetlerimiz</a></li>
+                <li> <a class="3" href="kurumsal.html">Kurumsal</a></li>
+                <li> <a class="4" href="kariyer.html">Kariyer</a></li>
+                <li> <a class="5" href="iletişim.html">İletişim</a></li>
+                
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+            <h3 style="text-align: center;">Tarihçe</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Qui rem doloribus et quibusdam totam perspiciatis, quos
+                  dicta dolores eveniet distinctio? Reiciendis animi vitae 
+                  rem nisi fugit ipsum placeat nobis recusandae. Lorem ipsum 
+                  dolor sit amet consectetur adipisicing elit. Quos perferendis 
+                  nostrum aperiam quidem reiciendis beatae explicabo numquam autem, 
+                  incidunt fuga nesciunt ullam, ea quo cum ipsum, earum ducimus
+                   voluptatum minima. Lorem ipsum dolor sit amet consectetur adipisicing 
+                   elit. Nisi consectetur voluptate sequi rem dicta dolorum impedit.
+                    Recusandae, eius nemo. Architecto asperiores porro sapiente expedita 
+                    dolores nisi incidunt, voluptatem reprehenderit modi.</p>
+            <hr>
+            <h3 style="text-align: center;">Misyon</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non cum 
+                consectetur ratione! Tenetur, quam iusto dicta harum explicabo nesciunt
+                , eligendi eius, quaerat esse optio id odit. Natus amet possimus ut!
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  inventore cumque. Dolores in necessitatibus dignissimos, minus atque
+                   accusantium culpa aliquam perspiciatis voluptate ab vel. Quidem ipsum 
+                   provident minus eaque sint? Lorem ipsum dolor sit, amet consectetur 
+                   adipisicing elit. Blanditiis, possimus quia! Dolore commodi doloremque
+                    placeat dolor eum quasi alias hic possimus odit laborum ipsum nulla, 
+                    libero soluta. Laudantium, earum adipisci!</p>
+                    <hr>
+                    <h3 style="text-align: center;">Vizyon</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non cum 
+                consectetur ratione! Tenetur, quam iusto dicta harum explicabo nesciunt
+                , eligendi eius, quaerat esse optio id odit. Natus amet possimus ut!
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  inventore cumque. Dolores in necessitatibus dignissimos, minus atque
+                   accusantium culpa aliquam perspiciatis voluptate ab vel. Quidem ipsum 
+                   provident minus eaque sint? Lorem ipsum dolor sit, amet consectetur 
+                   adipisicing elit. Blanditiis, possimus quia! Dolore commodi doloremque
+                    placeat dolor eum quasi alias hic possimus odit laborum ipsum nulla, 
+                    libero soluta. Laudantium, earum adipisci! <br> <br></p> 
+        </main>
+        <footer>Tüm hakları saklıdır &copy; | 2020 
+            <a href="http://www.facebook.com" target="_blank"> <img src="img/facebook.png" alt="Resim bulunamadı" title="facebook"></a>
+            <a href="http://www.intagram.com" target="_blank"> <img src="img/insta.jpg" alt="Resim bulunamadı" title="instagram"></a>
+            <a href="http://www.linkedin.com" target="_blank"> <img src="img/linkedin.png" alt="Resim bulunamadı" title="linkedin"></a>
+            
+        </footer>
+</body>
+</html>
